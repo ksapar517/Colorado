@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/sapar
+    username: postgres
+    password: 5566
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+server:
+  port: 8082
+
+account:
+  confirm:
+    timeout: 30000
+    email:
+      sender: no-reply@example.com
+    sms:
+      enabled: true
+
+
+app:
+  upload-dir: C:\Users\bakho\Downloads\demo\market\photos\
