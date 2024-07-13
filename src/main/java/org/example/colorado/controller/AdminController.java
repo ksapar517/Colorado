@@ -20,6 +20,7 @@ public class AdminController {
 
     @PostMapping("/signup")
     public String signUp(@ModelAttribute("registrationRequest") UsersDto registrationRequest, Model model) {
+        System.out.println(registrationRequest);
         String signUpResponse = adminService.signUp(registrationRequest);
         model.addAttribute("signUpResponse", signUpResponse); // Optional: Add response to the model
         return "registrationRequest";
